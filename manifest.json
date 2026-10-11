@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Stud.IP Course Tags",
+  "version": "3.0",
+  "description": "Add your own tags to courses in Stud.IP (My courses).",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://elearning.uni-oldenburg.de/*"],
+      "js": ["plan.js", "planer.js", "content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
